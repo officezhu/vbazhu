@@ -1,0 +1,167 @@
+<!--文件类型说明， 这里说明是一个html文件-->
+<!DOCTYPE html>
+<!--html文件由众多标签结构组成，每一个标签都由标签开始和标签关闭构成。标签用三角括号组成。-->    
+<html lang="en"><!-- 网页最外层 -->
+    <head><!-- 网页资讯 -->
+        <!-- meta标签 网页说明-->
+
+        <meta charset="UTF-8"><!-- 网页编码方式，"UTF-8"使浏览器可认中文 -->
+        <!--
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        -->
+        <!--网页内容描述 
+            viewport视窗
+            更多标签可以在w3c.htlm内搜寻
+        -->
+        <meta name="viewport" content="这里是朱京虹学习网页制作的网站">
+        <meta name="author" content="朱京虹">
+        <meta name="keywords" content="朱京虹, Access数据库,数据处理,Python">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>朱京虹学习网页创建</title>
+    </head>
+<!--************************************************************************************-->    
+    <body>
+        <header style="background-color: rgb(23, 44, 238);">
+            <!--es gibt sechs Schichte-->>
+            <h1 style="color: white;">朱京虹个人网页</h1>
+            <!--Link erstellen-->
+            <nav >
+                <ul >
+                    <li ><a href="#">Neu</a></li>
+                    <li ><a href="#">Über uns</a></li>
+                    <li ><a href="#">Info</a></li>
+                    <li ><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 基本标签 -->
+        hello 我是朱京虹， 正在学习网页设计制作
+        <!-- 标题h1到h6,字符由大到小。h1只能有一个 -->
+        <!-- 文章内容用 <p></p>框起来， <b>粗体字，<i>斜体字 -->
+        <h2>第一篇文章</h2>
+        <p>我的第<i><b>一篇文章</b></i>，网页设计</p>
+        <br><!-- 换行 -->
+        <hr><!-- 水平线，分割线 -->
+        <h2>第二篇文章</h2>
+        <p>我的第<i>二篇文章</i>，网页设计</p>
+        <br>
+        <h3>第三篇文章</h3>
+        <p>我的第三篇文章，网页设计</p>
+        <!-- 连接和图片  -->
+        <a href="http://google.de">google网站</a>
+        <!-- a 的属性 href="http://google.de"  -->
+        <a href="page2.html">第二网页</a>
+        <a href="dir/page3.html">第三网页</a>
+        <a href="MeinBild.png">我在大前门前的照片</a>
+        <h3>加入图片照片</h3>
+        <img src="https://pgw.worldjournal.com/gw/photo.php?u=https://uc.udn.com.tw/photo/wj/realtime/2024/01/18/28764543.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600&q=75" width="300px">
+        <img src="MeinBild.png" width="800px">
+        <h3>加入影片</h3>
+        <video src="my_video.mp4" controls>视频不存在</video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CLUPkcLQm64?si=gClP0h8ajQNgNLS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- 列表和表格  -->
+        <!-- 列表 <ul> <li>  -->
+        <h3>列表和表格</h3>
+        <ul>
+            <li>google</li>
+            <li>facebook</li>
+            <li>taobao</li>
+            <li>FederalMogul</li>
+            <li>ptt</li>
+        </ul>
+        <ol type="A"> <!-- 数字1，字母A，罗马字母I  -->
+            <li>google</li>
+            <li>facebook</li>
+            <li>taobao</li>
+            <li>FederalMogul</li>
+            <li>ptt</li>
+        </ol>
+        <!-- 表格  -->
+        <table width="400px">
+            <tr><!-- tr 行  -->
+                <td>日期</td><!-- td 列  -->
+                <td>数学</td>
+                <td>英语</td>
+            </tr>
+
+            <tr>
+                <td>2/8</td>
+                <td>80</td>
+                <td>60</td>
+            </tr>
+            
+            <tr>
+                <td>3/8</td>
+                <td>90</td>
+                <td>80</td>
+            </tr>
+        </table>
+        <h3>html的容器 div 和 span</h3>
+        <!-- html的容器 <div> <span> -->
+        <!-- html的容器 方便美化和排版编辑。尤其是在运用CSS技术是，尤其方便 -->
+        <div>
+            <ul>
+                <li>google</li>
+                <li>facebook</li>
+                <li>taobao</li>
+                <li>FederalMogul</li>
+                <li>ptt</li>
+            </ul>
+            <ol type="A"> <!-- 数字1，字母A，罗马字母I  -->
+                <li>google</li>
+                <li>facebook</li>
+                <li>taobao</li>
+                <li>FederalMogul</li>
+                <li>ptt</li>
+            </ol>
+            <!-- 表格  -->
+            <table width="400px">
+                <tr><!-- tr 行  -->
+                    <td>日期</td><!-- td 列  -->
+                    <td>数学</td>
+                    <td>英语</td>
+                </tr>
+    
+                <tr>
+                    <td>2/8</td>
+                    <td>80</td>
+                    <td>60</td>
+                </tr>
+                
+                <tr>
+                    <td>3/8</td>
+                    <td>90</td>
+                    <td>80</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <span>span1</span>
+        <span>span2</span>
+        <hr>
+        <div>div1</div>
+        <div>div2</div>
+
+        <h3>html的输入标签 input 和 textarea</h3>
+        <input type="text" placeholder="请输入您的账号或您的邮箱地址">
+        <br>
+        <br>
+        <input type="password" placeholder="请输入您的密码">
+        <br>
+        <br>
+        <input type="date" >
+        <br>
+        <br>
+        <input type="range" >
+        <br>
+        <br>
+        <input type="file" >
+        <br>
+        <br>
+        <input type="checkbox" >
+        <br>
+        <br>
+        <textarea>您好，你可以在这里留下您的宝贵意见</textarea>
+    </body>
+</html>

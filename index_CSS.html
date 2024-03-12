@@ -1,0 +1,283 @@
+<!--文件类型说明， 这里说明是一个html文件-->
+<!DOCTYPE html>
+<!--html文件由众多标签结构组成，每一个标签都由标签开始和标签关闭构成。标签用三角括号组成。-->    
+<html lang="en"><!-- 网页最外层 -->
+    <head><!-- 网页资讯 -->
+        <!-- meta标签 网页说明-->
+
+        <meta charset="UTF-8"><!-- 网页编码方式，"UTF-8"使浏览器可认中文 -->
+        <!--
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        -->
+        <!--网页内容描述 
+            viewport视窗
+            更多标签可以在w3c.htlm内搜寻
+        -->
+        <meta name="viewport" content="这里是朱京虹学习网页制作的网站">
+        <meta name="author" content="朱京虹">
+        <meta name="keywords" content="朱京虹, Access数据库,数据处理,Python">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>朱京虹学习网页创建</title>
+        <link rel="Stylesheet" href="style.css">
+    </head>
+<!--************************************************************************************-->    
+    <body>
+        <header style="background-color: rgb(23, 44, 238);">
+            <!--es gibt sechs Schichte-->>
+            <h1 style="color: white;">朱京虹个人网页</h1>
+            <!--Link erstellen-->
+            <nav >
+                <ul >
+                    <li ><a href="#">Neu</a></li>
+                    <li ><a href="#">Über uns</a></li>
+                    <li ><a href="#">Info</a></li>
+                    <li ><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 基本标签 -->
+        hello 我是朱京虹， 正在学习网页设计制作
+        <!-- 标题h1到h6,字符由大到小。h1只能有一个 -->
+        <!-- 文章内容用 <p></p>框起来， <b>粗体字，<i>斜体字 -->
+        <h2>第一篇文章</h2>
+        <p>我的第<i><b>一篇文章</b></i>，网页设计</p>
+        <p>online Helpdesk</p>
+        <p>Office Packete Automatisierung</p>
+        <p>Datenbankentwicklung in Access</p>
+        <p>MS Office Packet</p>
+        <p>Excel - Controlling Entwicklung</p>
+        <p>Python Entwicklung</p>
+        <img src="Uebersicht.png" width="600px" style="float: left">
+        
+        
+        <!--<div style="background-color: rgb(16, 175, 214); border: 1px; ">-->
+        <div>
+            <ol type="1"> <!-- 数字1，字母A，罗马字母I  -->
+                <li>online Helpdesk</li>
+                <li>Office Packete Automatisierung</li>
+                <li>Datenbankentwicklung in Access</li>
+                <li>MS Office Packet</li>
+                <li>Excel - Controlling Entwicklung</li>
+                <li>Python Entwicklung</li>
+                <li>automatische Auswertung</li>
+            </ol>
+        </div>
+        <br><!-- 换行 -->
+        <hr><!-- 水平线，分割线 -->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br<br><br>
+        
+        <h2>第二篇文章</h2>
+        <p>我的第<i>二篇文章</i>，网页设计</p>
+        <br>
+        <h3>第三篇文章</h3>
+        <p>我的第三篇文章，网页设计</p>
+        <!-- 连接和图片  -->
+        <a href="http://google.de">google网站</a>
+        <!-- a 的属性 href="http://google.de"  -->
+        <a href="page2.html">第二网页</a>
+        <a href="dir/page3.html">第三网页</a>
+        <a href="MeinBild.png">我在大前门前的照片</a>
+        <h3>加入图片照片</h3>
+        <img src="https://pgw.worldjournal.com/gw/photo.php?u=https://uc.udn.com.tw/photo/wj/realtime/2024/01/18/28764543.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600&q=75" width="300px">
+        <img src="MeinBild.png" width="800px">
+        <!--<img src="Uebersicht.png" width="600px">-->
+        <h3>加入影片</h3>
+        <video src="my_video.mp4" controls>视频不存在</video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CLUPkcLQm64?si=gClP0h8ajQNgNLS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- 列表和表格  -->
+        <!-- 列表 <ul> <li>  -->
+        <h3>列表和表格</h3>
+        <ul>
+            <li>google</li>
+            <li>facebook</li>
+            <li>taobao</li>
+            <li>FederalMogul</li>
+            <li>ptt</li>
+        </ul>
+        <ol type="A"> <!-- 数字1，字母A，罗马字母I  -->
+            <li>google</li>
+            <li>facebook</li>
+            <li>taobao</li>
+            <li>FederalMogul</li>
+            <li>ptt</li>
+        </ol>
+        <!-- 表格  -->
+        <table width="400px">
+            <tr><!-- tr 行  -->
+                <td>日期</td><!-- td 列  -->
+                <td>数学</td>
+                <td>英语</td>
+            </tr>
+
+            <tr>
+                <td>2/8</td>
+                <td>80</td>
+                <td>60</td>
+            </tr>
+            
+            <tr>
+                <td>3/8</td>
+                <td>90</td>
+                <td>80</td>
+            </tr>
+        </table>
+        <h3>html的容器 div 和 span</h3>
+        <!-- html的容器 <div> <span> -->
+        <!-- html的容器 方便美化和排版编辑。尤其是在运用CSS技术是，尤其方便 -->
+        <div style="background-color: beige; border: 1px; ">
+            <ul>
+                <li>google</li>
+                <li>facebook</li>
+                <li>taobao</li>
+                <li>FederalMogul</li>
+                <li>ptt</li>
+            </ul>
+            <ol type="A"> <!-- 数字1，字母A，罗马字母I  -->
+                <li>google</li>
+                <li>facebook</li>
+                <li>taobao</li>
+                <li>FederalMogul</li>
+                <li>ptt</li>
+            </ol>
+            <!-- 表格  -->
+            <table width="400px">
+                <tr><!-- tr 行  -->
+                    <td>日期</td><!-- td 列  -->
+                    <td>数学</td>
+                    <td>英语</td>
+                </tr>
+    
+                <tr>
+                    <td>2/8</td>
+                    <td>80</td>
+                    <td>60</td>
+                </tr>
+                
+                <tr>
+                    <td>3/8</td>
+                    <td>90</td>
+                    <td>80</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <span>span1</span>
+        <span>span2</span>
+        <hr>
+        <div>div1</div>
+        <div>div2</div>
+
+        <h3>html的输入标签 input 和 textarea</h3>
+        <input type="text" placeholder="请输入您的账号或您的邮箱地址">
+        <br>
+        <br>
+        <input type="password" placeholder="请输入您的密码">
+        <br>
+        <br>
+        <input type="date" >
+        <br>
+        <br>
+        <input type="range" >
+        <br>
+        <br>
+        <input type="file" >
+        <br>
+        <br>
+        <input type="checkbox" >
+        <br>
+        <br>
+        <textarea>您好，你可以在这里留下您的宝贵意见</textarea>
+        <!--******************CSS 方法 *******************************************-->
+        <!--padding 内部空间 und margin 外部空间, margin可以取负数-->
+        <h3>css 方法 padding und margin </h3>
+        <div style="padding: 20px; margin: 20px; background-color: rgb(43, 226, 205); border: 2px solid;"> 
+            hallo ich bin jinghong
+        </div>
+        <h3>float 方法 display </h3>
+        <img img src="https://pgw.worldjournal.com/gw/photo.php?u=https://uc.udn.com.tw/photo/wj/realtime/2024/01/18/28764543.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600&q=75" width="100px"  style="float: left"/>
+        <p>float 方法 display学习</p>
+        <br><br><br><br><br><br><br><br>
+        <hr>
+        <ul style="float: left; background-color: aquamarine;padding: 20px; margin: 20px;">
+            <li>主页</li>
+            <li>部落格</li>
+            <li>关于我们</li>
+            <li>联系我们</li>
+        </ul>
+        <p style="display:inline">列表使用float功能1</p>
+        <p style="display:inline">列表使用float功能2</p>
+        <br><br><br><br><br><br><br><br>
+        <hr>
+        <h3>position fixed und relative方法 </h3>
+        <!--<div style="position:fixed; width: 80px; height: 80px;background-color: rgb(60, 25, 212);"></div>
+        <div style="position:fixed; width: 120px; height: 120px;background-color: red;">testing</div>-->
+        
+        <div style=" width: 80px; height: 80px;background-color:rgb(60, 25, 212);">testing</div> 
+        <div style=" width: 120px; height: 120px;background-color: red;">testing</div>
+        <br><br>
+        
+        <hr>
+        <div style="padding:30px; border: 3px solid red;">
+            <div style="position:relative; padding: 30px; border: 2px solid red;">
+                <div style="position:absolute; bottom: 0px; left: 0px; width: 40px; height: 40px; background-color: blue;"></div>
+            </div>
+        </div>
+
+        <!--opacity透明度(0-1) und border-radius-->
+        <h3>opacity und border-radius方法 </h3>
+        <hr>
+        <p style="position:relative; top: 55px; left: 15px">位置编辑</p>
+        <div style="opacity:0.4; border-radius: 40px; width: 80px; height: 80px; background-color: blue;"></div>
+        <br><br>
+        <div style="opacity:0.4; border-radius: 20px 30px 40px 50px; width: 80px; height: 80px; background-color: blue;"></div>
+        
+        <!--class 分类 und id 唯一识别代码-->
+        <h3 id="css-id-test">class 分类 und id 方法 </h3>
+        <p class="person backgroundgrey">张三</p>
+        <p class="person">李四</p>
+        <p class="person">王五</p>
+        <p class="food backgroundgrey">红烧肉</p>
+        <p class="food">宫保鸡丁</p>
+        <p class="food">北京烤鸭</p>
+
+    <!--**************** 显示方式flex (显示成行的形式) ****************************************-->
+    <h3> 显示方式 flex 由左到右 </h3>
+        
+        <div class="container">
+            <div class="box-1">图块1</div>
+            <div class="box-2">图块2</div>
+            <div class="box-3">图块3</div>
+            <!--<div class="box-1">图块4</div>
+            <div class="box-2">图块5</div>
+            <div class="box-3">图块6</div>
+            <div class="box-1">图块7</div>
+            <div class="box-2">图块8</div>
+            <div class="box-3">图块9</div>-->
+            
+
+        </div>
+        
+        <br>
+        <button class="button-1">Das ist ein Button 1</button>
+        <button class="button-2">Das ist ein Button 2</button>
+        <button id="button-3">Das ist ein Button 3</button>
+        <hr><hr>
+        <h3>构造卡片</h3>
+        <div class="card">
+            <div class="left">
+                <img img src="https://pgw.worldjournal.com/gw/photo.php?u=https://uc.udn.com.tw/photo/wj/realtime/2024/01/18/28764543.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600&q=75" class="xinzhilei">
+                <h4>女演员辛芷蕾</h4>
+            </div>
+            <div class="right">
+                <p class="hinweise">这是朱京虹学习怎样使用class和flex</p>
+                <div class="social-icons">
+                    <div class="icons">Facebook</div>
+                    <div class="icons">Email</div>
+                    <div class="icons">Youtube</div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

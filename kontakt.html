@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VBA Website Jinghong Zhu</title>
+    <link rel="Stylesheet" href="style.css">
+</head>
+<body>
+    <header style="background-color: rgb(23, 44, 238); height: 60px;">
+        <!--es gibt sechs Schichte-->
+        <h1 style="padding: 10px 0 0 20px">Kontaktieren Sie mich</h1>
+        
+        <!--Link erstellen-->
+        <nav>
+            <ul >
+                <li ><a href="mich.html">Über mich</a></li>
+                <li ><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    
+        
+        <ul class="sprach">
+            <li class="sprach"><a href="kontakt_englisch.html">englisch</a></li>
+            <li class="sprach"><a href="kontakt_china.html">中文</a></li>
+        </ul>
+    
+    
+    </header>
+
+
+    <div class="MS-Uebersicht">
+        <img src="Uebersicht.png" width="750px" style="margin-left: 20px; margin-top: 20px;">
+        <!--<img src="Uebersicht.png" width="750px" style="float: left">-->
+        <div class="card-autor">
+            <div class="left-autor">
+                <img src="JHZhu.png" class="Zhujinghong">
+                <p class="hinweise">
+                    Dr.-Ing. Jinghong Zhu<br><br>
+                    Tel.: (+49) 01777798823<br><br>
+                    E-Mail: jinghong5812@yahoo.de<br><br>
+                    Wohnort: Wiesbaden
+                </p>
+            </div>
+        </div>
+    </div>
+    <p style="font-size: 40px;color: blueviolet;">
+        Möchten Sie mir eine Nachricht hinterlassen? Gerne rufe Ich Sie auch zurück.
+    </p>
+        <!--
+            <h3>Kontaktdaten</h3>
+            <div>
+                <input type="text" name="Unternehmen" placeholder="Unternehmen" class="shuru" id="Unternehmen">
+                <input type="text" name="Name" placeholder="Name" class="shuru" id="Name"><br><br>
+                <input type="text" name="eMailAdresse" placeholder="E-mail-Adresse" class="shuru" id="eMailAdresse">
+                <input type="text" name="telefonNr" placeholder="Telefon-Nr." class="shuru" id="telefonNr">
+            </div>
+            <input type="checkbox"> Mit Absenden des Formulars bestätige ich die Datenschutzerklärung
+            <br><br> 
+        -->
+        <h3>Tragen Sie hier Ihre Nachricht ein!</h3>
+        <textarea style="width: 800px; height: 80px;" id="nachricht">Hier können Sie Nachrichten schreiben.</textarea>
+        <br><br>
+               
+        <button class="button-2" onclick="eMailSenden()">
+            <a href= "mailto:[jinghong5812@yahoo.de]?body=nachricht">
+                Absenden
+            </a>
+        </button>
+        <!--mailto:[E-Mail-Adresse des Empfängers]?subject=[E-Mail-Betreff]&body=[E-Mail-Text]-->
+        <!--<p class="tel">Telefonnummer ist:</p>; <a href= "mailto:abc@example.com">Send Email</a>-->
+        
+        <script>
+            function eMailSenden() {
+                console.log('vielen Dank für Ihre Besuche. Ich werde Sie möglich schnell beantworten.');    
+                //const unternehmen = document.getElementById('Unternehmen').value;
+                //const Name = document.getElementById('Name').value;
+                //const eMailAdresse = document.getElementById('eMailAdresse').value;
+                //const telefonNr = document.getElementById('telefonNr').value;
+                const nachricht=document.getElementById('nachricht').value;
+                console.log(nachricht);         
+                //document.querySelector('.tel').innerHTML = 'Telefonnummer ist: ' + telefonNr 
+            }
+        </script>        
+</body>
+</html>
